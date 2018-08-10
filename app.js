@@ -5,8 +5,8 @@
 */
 
 // Add touch class to an element that was clicked
-let touchElement = () => {
-    this.classList.add('touched');
+let touchElement = (element) => {
+    element.classList.add('touched');
 }
 
 // Check if the field was touched
@@ -32,7 +32,7 @@ let loginInputs = [document.getElementById('username'), document.getElementById(
 
 // Execute the functions to touch the element
 loginInputs.forEach(el => el.addEventListener('click', (e) => {
-    e.target.touchElement();
+    touchElement(e.target);
 }));
 
 // Make the validation
@@ -45,6 +45,7 @@ document.getElementById('login-form').addEventListener('submit', (e) => {
         if (isTouched(loginInputs[i]) && !isInputValid(loginInputs[i])) {
             e.preventDefault();
             // error message 
+            return false;
         }
     }
 })

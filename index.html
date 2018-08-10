@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
+    <script src="./app.js" defer></script>
 </head>
 
 <body>
@@ -21,11 +22,11 @@
                <strong>Digite seu email e senha</strong>
             </div>
 
-            <form action="#" class="login-form" novalidate>
+            <form action="#" id="login-form" novalidate>
                 <fieldset>
                     <legend>Entrar na minha conta</legend>
-                    <input type="text" id="username" name="username" class="form-control form-control__bg-gray form-control__bg-img">
-                    <input type="text" id="password" name="password" class="form-control form-control__bg-gray form-control__bg-img">
+                    <input type="email" id="username" name="username" class="form-control form-control__bg-gray form-control__bg-img" required>
+                    <input type="password" id="password" name="password" class="form-control form-control__bg-gray form-control__bg-img" required>
                     <button type="submit" class="btn btn-primary">Entrar</button>
                     <div class="remind-user">
                         <input type="checkbox" name="remind-user"> Mantenha-me conectado
