@@ -1,9 +1,6 @@
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var sass = require('gulp-sass');
-var gulpCopy = require('gulp-copy');
-var cssSourceFiles = [ './node_modules/bootstrap/dist/css/bootstrap.css'];
-var cssDestination = './production/css';
 
 
 gulp.task('minify', function() {
