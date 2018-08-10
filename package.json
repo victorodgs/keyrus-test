@@ -9,6 +9,15 @@
   "private": false,
   "dependencies": {
     "bootstrap": "4.0.0",
-    "font-awesome": "4.7.0"
+    "font-awesome": "4.7.0",
+    "jquery": "^3.3.1",
+    "tether": "^1.4.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-copy": "^1.1.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-yarn": "^2.0.0"
   }
 }

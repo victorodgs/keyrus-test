@@ -7,14 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <script src="./js/app.js" defer></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="./css//style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="container">
         <section class="login">
+            <div class="alert alert-success fade show" role="alert">
+                <i class="fa fa-check"></i>
+                <strong class="float-right">Você foi logado com sucesso</strong>
+            </div>
+
+            <div class="alert alert-danger fade show" role="alert">
+                <i class="fa fa-remove"></i>
+                <strong class="float-right">Digite seu email e senha</strong>
+            </div>
             <form action="#" id="login-form" class="mb-5" novalidate>
                 <fieldset>
                     <legend class="mb-3">Entrar na minha conta</legend>
