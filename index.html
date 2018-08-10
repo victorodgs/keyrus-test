@@ -9,7 +9,45 @@
 </head>
 
 <body>
-   
+    <div class="wrapper">
+        <section class="login">
+            <div class="alert alert-success alert__icon-left alert__text-right" role="alert">
+                <i class="fa fa-check"></i>
+                <strong>Você foi logado com sucesso</strong>
+            </div>
+
+            <div class="alert alert-danger" role="alert">
+                <i class="fa fa-remove"></i>
+               <strong>Digite seu email e senha</strong>
+            </div>
+
+            <form action="#" class="login-form" novalidate>
+                <fieldset>
+                    <legend>Entrar na minha conta</legend>
+                    <input type="text" id="username" name="username" class="form-control form-control__bg-gray form-control__bg-img">
+                    <input type="text" id="password" name="password" class="form-control form-control__bg-gray form-control__bg-img">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <div class="remind-user">
+                        <input type="checkbox" name="remind-user"> Mantenha-me conectado
+                    </div>
+                </fieldset>
+            </form>
+            <span class="register-link">Precisa de uma conta?
+                <a href="#">Inscrever-se</a>
+            </span>
+            <span class="recovery-link">Esqueceu sua senha?
+                <a href="#">Clique aqui.</a>
+            </span>
+            <div class="presentation">
+                <span class="help-icon">
+                    <i class="fa"></i>
+                </span>
+                <span class="company-name">
+                    Keyrus
+                </span>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
