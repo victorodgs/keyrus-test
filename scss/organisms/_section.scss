@@ -1,0 +1,25 @@
+section.login {
+    width: auto;
+}
+
+.links {
+    width: 100%;
+    height: auto;
+}
+
+span.links__register-link, span.links__recovery-link {
+    color: #787878;
+    text-align: center;
+    text-decoration: underline;
+    display: block;
+}
+
+span.links__register-link {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+span.links__recovery-link {
+    font-size: 10px;
+    margin-top: 4px;
+}

@@ -6,48 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <script src="./app.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css//style.css">
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="container">
         <section class="login">
-            <div class="alert alert-success alert__icon-left alert__text-right" role="alert">
-                <i class="fa fa-check"></i>
-                <strong>Você foi logado com sucesso</strong>
-            </div>
-
-            <div class="alert alert-danger" role="alert">
-                <i class="fa fa-remove"></i>
-               <strong>Digite seu email e senha</strong>
-            </div>
-
-            <form action="#" id="login-form" novalidate>
+            <form action="#" id="login-form" class="mb-5" novalidate>
                 <fieldset>
-                    <legend>Entrar na minha conta</legend>
-                    <input type="email" id="username" name="username" class="form-control form-control__bg-gray form-control__bg-img" required>
-                    <input type="password" id="password" name="password" class="form-control form-control__bg-gray form-control__bg-img" required>
-                    <button type="submit" class="btn btn-primary">Entrar</button>
-                    <div class="remind-user">
+                    <legend class="mb-3">Entrar na minha conta</legend>
+                    <input type="email" id="username" name="username" class="form-control form-control__bg-gray" placeholder="Email" required>
+                    <i class="fa fa-user"></i>
+                    <input type="password" id="password" name="password" class="form-control form-control__bg-gray" placeholder="Senha" required>
+                    <i class="fa fa-lock"></i>
+                    <button type="submit" class="btn btn--call-to-action horizontal-center d-block mt-3">Entrar</button>
+                    <div class="remind-user mt-3">
                         <input type="checkbox" name="remind-user"> Mantenha-me conectado
                     </div>
                 </fieldset>
             </form>
-            <span class="register-link">Precisa de uma conta?
-                <a href="#">Inscrever-se</a>
-            </span>
-            <span class="recovery-link">Esqueceu sua senha?
-                <a href="#">Clique aqui.</a>
-            </span>
-            <div class="presentation">
-                <span class="help-icon">
-                    <i class="fa"></i>
+            <div class="links">
+                <span class="links__register-link">Precisa de uma conta?
+                    <a href="#">Inscrever-se</a>
                 </span>
-                <span class="company-name">
-                    Keyrus
+                <span class="links__recovery-link">Esqueceu sua senha?
+                    <a href="#">Clique aqui.</a>
                 </span>
             </div>
         </section>
+        <footer class="row presentation">
+            <div class="col-md-1 col-sm-1 col-xs-1 presentation__help-icon">
+                <i>i</i>
+            </div>
+            <div class="col-md-11 col-sm-11 col-xs-11 presentation__company-name">
+                <em>Keyrus</em>
+            </div>
+        </footer>
     </div>
 </body>
 

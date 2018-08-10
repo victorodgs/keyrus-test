@@ -1,0 +1,42 @@
+// All the glbal styles here
+
+@import '_variables';
+@import 'organisms/_login-form';
+@import 'organisms/_section';
+@import 'organisms/_footer';
+
+html, body {
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: underline;
+}
+
+// Utilities
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+} 
+
+.horizontal-center {
+    margin: 0 auto;
+}
+
+// Buttons
+.btn--call-to-action {
+    color: white;
+    background: $blue;
+    border: 1.3px solid $dark-blue;
+    font-weight: bolder;
+    text-shadow: 2px 1px 1px $dark-blue;
+    padding: 10px 40px;
+}
