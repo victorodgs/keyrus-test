@@ -1,0 +1,13 @@
+{
+  "name": "keyrus-test",
+  "version": "1.0.0",
+  "description": "Teste para front-end da Keyrus Digital",
+  "main": "index.js",
+  "repository": "https://github.com/victorodgs/keyrus-test.git",
+  "author": "Victor Costa <victorodgs@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bootstrap": "4.0.0"
+  }
+}
