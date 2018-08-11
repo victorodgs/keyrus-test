@@ -37,21 +37,18 @@ loginInputs.forEach(el => el.addEventListener('click', (e) => {
 
 // Make the validation
 document.getElementById('login-form').addEventListener('submit', (e) => {
-    for (let i = 0; i < loginInputs.length; i++) {
-        if (isTouched(loginInputs[i]) && isInputValid(loginInputs[i])) {
+        if (isInputValid(loginInputs[0]) && isInputValid(loginInputs[1])) {
             e.preventDefault();
-            $('.alert-success').show();
+            $('.alert-success').show(200);
             setTimeout(() => {
-                $('.alert-success').alert('close')
+                $('.alert-success').hide(200)
             }, 3000)
-        }
-
-        if (isTouched(loginInputs[i]) && !isInputValid(loginInputs[i])) {
+        } else if (!isInputValid(loginInputs[0]) || !isInputValid(loginInputs[1])) {
             e.preventDefault();
-            $('.alert-danger').show();
+            $('.alert-danger').show(200);
             setTimeout(() => {
-                $('.alert-danger').alert('close')
+                $('.alert-danger').hide(200)
             }, 3000)
         }
     }
-})
+)
